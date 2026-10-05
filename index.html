@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lecture Drop</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wrap">
+  <section class="card">
+    <div class="icon">📚</div>
+    <h1>Lecture Drop</h1>
+    <p class="sub">Upload a lecture file on the laptop, then open this same page on your phone to download it.</p>
+
+    <label class="drop" id="drop">
+      <input id="file" type="file" accept=".ppt,.pptx,.pdf,.doc,.docx,.xls,.xlsx,.jpg,.jpeg,.png,.zip">
+      <strong>📤 Choose a file</strong>
+      <span>or drag & drop here</span>
+      <small>Max 50 MB • PPT/PDF/DOC/XLS/images/ZIP</small>
+    </label>
+
+    <div id="status" class="status"></div>
+    <button id="upload" disabled>Upload file</button>
+
+    <h2>Available files</h2>
+    <div id="files" class="files"><div class="muted">Loading…</div></div>
+
+    <footer>Public upload is enabled. Don't upload private or sensitive files.</footer>
+  </section>
+</main>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
